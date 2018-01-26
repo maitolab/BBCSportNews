@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_news_icon_size">64dp</dimen>
+    <dimen name="item_news_icon_padding">7dp</dimen>
+    <dimen name="item_news_icon_margin">5dp</dimen>
+    <dimen name="text_detail_margin">5dp</dimen>
+    <dimen name="text_detail_vertical_margin">10dp</dimen>
+    <dimen name="text_time_margin">20dp</dimen>
+    <dimen name="tile_size">22sp</dimen>
+
+</resources>

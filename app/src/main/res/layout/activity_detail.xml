@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vsee.bbcsportnews.activity.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_detail_margin"
+            android:layout_marginStart="@dimen/text_detail_margin"
+            android:layout_marginTop="@dimen/text_detail_margin"
+            android:textSize="@dimen/tile_size" />
+
+        <TextView
+            android:id="@+id/txt_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_time"
+            android:layout_alignBottom="@+id/txt_time"
+            android:layout_alignLeft="@id/txt_title"
+            android:layout_alignStart="@id/txt_title"
+            android:layout_marginBottom="@dimen/text_detail_vertical_margin"
+            android:layout_marginTop="@dimen/text_detail_vertical_margin"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title"
+            android:layout_marginBottom="@dimen/text_detail_vertical_margin"
+            android:layout_marginTop="@dimen/text_detail_vertical_margin"
+            android:layout_toEndOf="@id/txt_author"
+            android:layout_toRightOf="@id/txt_author"
+            android:paddingEnd="0dp"
+            android:paddingLeft="@dimen/text_time_margin"
+            android:paddingRight="0dp"
+            android:paddingStart="@dimen/text_time_margin"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/txt_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_time"
+            android:layout_marginBottom="@dimen/text_detail_vertical_margin"
+            android:layout_marginTop="@dimen/text_detail_vertical_margin"
+            android:textColor="@android:color/darker_gray" />
+
+        <WebView
+            android:id="@+id/wv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_des"
+            android:layout_margin="@dimen/text_detail_margin"
+            android:layout_marginTop="@dimen/text_detail_vertical_margin" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
